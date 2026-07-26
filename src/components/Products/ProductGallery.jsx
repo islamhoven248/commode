@@ -2,7 +2,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import productImages from "../../assets/Products/Images/Images";
-import "./products.css";
+import "./Products.css"
 
 export default function ProductGallery({ images = [] }) {
   useEffect(() => {

@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { setProducts } from "../Redux/Slice/productSlice";
-import productsData from "../assets/Products/products.json";
+import productsData from "../assets/Products/Products.json";
 
 export default function useProducts() {
   const dispatch = useDispatch();
