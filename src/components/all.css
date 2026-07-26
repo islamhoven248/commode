@@ -1,0 +1,120 @@
+/* ====Header==== */
+
+.floating-navbar {
+  position: fixed;
+  top: 10px;
+  left: 20%;
+  width: 60%;
+  z-index: 999;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.floating-navbar.hide {
+  transform: translateY(-120%);
+  opacity: 0;
+}
+
+.floating-navbar.show {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.glass-navbar {
+  background: rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(12px);
+  border-radius: 22px;
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  padding: 12px 24px;
+}
+
+.brand-icon {
+  width: 85px;
+  height: auto;
+  filter: drop-shadow(0 0 6px rgba(212,175,55,0.5));
+}
+
+.brand-logo span {
+  letter-spacing: 3px;
+   color: #d4af37 !important;
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-size: 24px;
+}
+
+.nav-link {
+  color: #fff !important;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.nav-main-link.active {
+  color: #d4af37 !important;
+}
+
+.cartIconBar {
+  position: relative;
+  color: #d4af37 !important;
+}
+
+.cart-counter {
+  position: absolute;
+  top: -6px;
+  right: -10px;
+  background: #d4af37;
+  color: #000;
+  font-size: 11px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+
+/* Footer styles */
+.footer-section {
+  background: #000;
+  color: #fff;
+  border-top: 1px solid rgba(212,175,55,0.3);
+  padding-top: 20px;
+}
+.footer-section h3,h4,h5 {
+  color: #d4af37;
+  margin-bottom: 1rem;
+}
+.footer-section p {
+  color: #ccc;
+}
+.footer-section button {
+  border-radius: 20px;
+  background: linear-gradient(135deg, #d4af37, #f5d76e);
+  color: #000;
+}
+.footer-section button:hover {
+  transform: translateY(-1px) scale(1.05);
+  color: #000;
+
+  box-shadow: 0 15px 25px rgba(212, 175, 55, 0.6);
+}
+
+.footer-section hr {
+  opacity: 0.2;
+  border-top: 1px solid #d4af37;
+}
+
+.social-icons a i {
+  font-size: 22px;
+}
+
+@media (max-width: 768px) {
+  .floating-navbar {
+   left: 0;
+    width: 100%;
+  }
+  .footer-section {
+    padding: 2rem 1rem;
+  }
+}
